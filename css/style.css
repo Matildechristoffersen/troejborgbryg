@@ -1,0 +1,978 @@
+ 
+  body {
+    margin: 0;
+    font-family: garamond;
+    background-color: #e6dfd6;
+  }
+  
+  a {
+    color: #000;
+  }
+  
+  /* header */
+  
+  .header .logo {
+    display: block;
+    float: left;
+    padding: 10px 20px;
+    text-decoration: none;
+  }
+
+  .logo {
+    width: 130px; 
+    height: auto;
+    margin-right: 1rem; 
+  }
+
+  .header {
+    background-color: #e6dfd6;
+    box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+  }
+  
+  .header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    background-color: #fff;
+  }
+  
+  .header li a {
+    display: block;
+    padding: 20px 20px;
+    text-decoration: none;
+  }
+  
+  .header li a:hover,
+  .header .menu-btn:hover {
+    background-color: #f4f4f4;
+  }
+  
+  .header .logo {
+    display: block;
+    float: left;
+    font-size: 2em;
+    padding: 10px 20px;
+    text-decoration: none;
+  }
+
+  /* submenu */
+ 
+.submenu {
+    border: none;
+  }
+  .menu li{
+    position: relative;
+  }
+  .menu li ul {
+    display: none;
+    position: relative;
+    background-color: #e6dfd6; 
+    width: 100%;
+    height: 110px;
+  }
+  
+  .menu li:hover ul {
+    display: block;
+  }
+  
+  .menu li ul li {
+    float:none; 
+    position: relative;
+  }
+  .menu li ul li:hover {
+  background-color: #ffff;
+  }
+  
+  .menu li ul li a{
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  }
+  
+  
+  /* menu */
+  
+  .header .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+  }
+  
+  /* menu icon */
+  
+  .header .menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+  }
+  
+  .header .menu-icon .navicon {
+    background: #e86436;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: .2s ease-out;
+    width: 18px;
+  }
+  
+  .header .menu-icon .navicon:before,
+  .header .menu-icon .navicon:after {
+    background: #e86436;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+  }
+  
+  .header .menu-icon .navicon:before {
+    top: 5px;
+  }
+  
+  .header .menu-icon .navicon:after {
+    top: -5px;
+  }
+  
+  /* menu btn */
+  
+  .header .menu-btn {
+    display: none;
+  }
+  
+  .header .menu-btn:checked ~ .menu {
+    max-height: 240px;
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon {
+    background: transparent;
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon:before {
+    transform: rotate(-45deg);
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon:after {
+    transform: rotate(45deg);
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+    top: 0;
+  }
+
+  .sog{
+    display: none;
+  }
+
+
+  /*----main forside----*/
+
+
+.forside_billede img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0%; 
+    }
+    
+
+    
+.overskrift_forside {
+    display: flex;
+    justify-content: center;
+    font-family: garamond;
+    font-size: 300%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    }
+
+
+.overskrift_forside {
+    display: flex;
+    justify-content: center;
+    font-family: garamond;
+    font-size: 300%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-size: x-large;
+}
+
+  .billeder_forside {
+    display: block;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #jump img,
+  #hop img {
+    transition: transform 0.2s ease-in-out;
+  }
+
+  #jump:hover img,
+  #hop:hover img {
+    transform: translateY(-10px);
+  }
+
+  .billeder_forside img {
+    max-width: 100%;
+    height: auto; 
+    margin-bottom: 10px;
+  }
+
+  .tekst_forside {
+    font-size: large;
+    display: flex;
+    text-align: center;
+  }
+
+  .tekst2_forside {
+    display: flex;
+    font-size: larger;
+    justify-content: center;
+    border: 1px solid black;
+    border-radius: 0%;
+    width: 35%;
+    text-align: center;
+    align-items: center;
+    margin: auto; 
+    align-items: center;
+  }
+
+
+  .forside_lakrids{
+    display: flex;
+    justify-content: center;
+  }
+
+.forside_lakrids img {
+    width: 120%;
+}
+
+/*---main fremstilling af øl----*/
+
+.main2 {
+    padding-top: 12%;
+}
+
+.fremstilling_overskrift {
+    display: flex;
+    justify-content: center;
+    font-family: garamond;
+    font-size: 300%;
+    font-size: x-large;
+    margin-top: 10%;
+}
+
+.tekst_fremstilling {
+    font-size: medium;
+    display: flex;
+    font-family: garamond;
+    width: 60%;
+    margin: auto; 
+    line-height: 1.8;
+}
+
+.billede_raa {
+    display: block;
+    text-align: center;
+}
+
+.billede_raa img {
+    max-width: 100%;
+    height: auto; 
+    margin-bottom: 10px;
+}
+
+.bryg {
+    display: block;
+    text-align: center;
+}
+
+.bryg img {
+    max-width: 90%;
+    height: auto; 
+    margin-bottom: 10px;
+}
+
+.sundhed {
+    display: block;
+    text-align: center;
+}
+
+.sundhed img {
+    max-width: 100%;
+    height: auto; 
+    margin-bottom: 10px;
+}
+
+.nyhedsbrev {
+    max-width: 400px;
+    margin: 50px auto;
+    background-color: #dcd3cc;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    font-family: garamond;
+    font-size: medium;
+}
+
+.hr_frem {
+    display: none;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+    color: #555;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #e86436;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: garamond;
+}
+
+button:hover {
+    background-color: #eb7b52;
+}
+
+/*-----main om bryggeriet-----*/
+
+.historie_billede img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0%; 
+    }
+    
+.omos_tekst {
+    display: flex;
+    font-family: garamond;
+    line-height: 2;
+    max-width: 70%;
+    margin: auto;
+    font-size: medium;
+        
+    
+    }
+
+    .værdier img {
+        width: 120%;
+    }
+
+    .værdier {
+        display: flex;
+        justify-content: center;
+    }
+
+    .koncert img {
+        max-width: 100%;
+    }
+
+    .koncert {
+        display: flex;
+        justify-content: center;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    .venner img {
+        max-width: 100%;
+    }
+
+    .venner {
+        display: flex;
+        justify-content: center;
+    }
+
+    .underoverskrift {
+        text-align: center;
+        font-size: xx-large;
+        font-family: garamond;
+    }
+
+    .lime_omos img,
+    .grape_omos img,
+    .lakrids_omos img {
+        max-width: 30%;
+      }
+
+      .lime_omos {
+        position: absolute;
+        top: 45%;
+      }
+
+      .grape_omos {
+        position: absolute;
+        display: flex;
+        justify-content: right;
+        top: 160%;
+        
+      }
+
+      .lakrids_omos {
+        position: absolute;
+        top: 260%;
+      }
+
+    /*-------underside, alkoholfri øl-----*/
+
+    .main4 {
+        padding-top: 5%;
+    }
+
+    .overskrift_produkter {
+        text-align: center;
+        font-size: x-large;
+        font-family: garamond;
+        margin-top: 25%;
+    }
+
+    .produkter {
+        display: flex;
+        justify-content: center;
+    }
+
+    .produkter img {
+        max-width: 130%;
+    }
+
+    #lime_alkohol {
+      max-width: 80%;
+      display: flex;
+      justify-content: center;
+      margin-top: 0%;
+    }
+
+
+ /*------produkt undersider-----*/
+
+    .body_lime {
+        background-color: #cbf6e1;
+    }
+
+    .body_grape {
+        background-color: #f4dfd1;
+    }
+
+    .body_lakrids {
+        background-color: #939290;
+    }
+
+
+    #header_lime {
+        background-color: #cbf6e1;
+    }
+
+    .main_lime {
+        background-color: #cbf6e1;
+    }
+
+    #footer_lime {
+        background-color: #cbf6e1;
+    }
+
+    #header_grape {
+        background-color: #f4dfd1;
+    }
+
+    .main_grape {
+        background-color: #f4dfd1;
+    }
+
+    #footer_grape {
+        background-color: #f4dfd1;
+    }
+
+    #header_lakrids {
+        background-color: #939290;
+    }
+
+    .main_lakrids {
+        background-color: #939290;
+    }
+
+    #footer_lakrids {
+        background-color: #939290;
+    }
+
+    .produkt_undersider {
+        display: flex;
+        justify-content: center;
+        margin-top: 0%;
+    }
+    .produkt_undersider img {
+        max-width: 100%;
+    }
+
+    #lime_alkohol2 {
+      max-width:80%;
+      display: flex;
+      justify-content: center;
+      margin-top: 18%;
+    }
+
+    .produkt_overskrifter {
+        text-align: center;
+        font-family: garamond;
+        margin-top: 8%;
+    }
+
+    #xlime {
+        color: #95daba;
+        margin-bottom: 5%;
+    }
+
+    #xgrape {
+        color: #d7b39d;
+        margin-bottom: 8%;
+    }
+
+    #llakrids {
+        color: #595555;
+        margin-bottom: 8%;
+    }
+
+    .produkter_tekst {
+        font-family: garamond;
+        text-align: center;
+        line-height: 2;
+        margin-top: 50%;
+        max-width: 70%;
+        margin: 0 auto;
+    }
+
+    .info_produkter img {
+        max-width: 100%;
+    }
+
+    .info_produkter {
+        display: flex;
+        justify-content: center;
+        margin-top: 20%;
+    }
+
+
+/*----footer----*/
+
+.hr {
+    border-width: 1px;
+    border-color: #f3efe7;
+}
+
+#hr_lakrids {
+    border-color: #b5b1b1;
+}
+footer {
+    background-color: #e6dfd6;
+    color: #000000;
+    text-align: center;
+  }
+  
+  .footer-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: garamond;
+    line-height: 2;
+    padding-bottom: 2%;
+    padding-top: 2%;
+  }
+
+  .information a {
+    text-decoration: none;
+    color: #000;
+  }
+
+  .ikoner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    max-width: 10px; 
+  }
+
+  .ikoner img {
+    max-width: 30px;
+    margin: 0 10px;
+  }
+
+  #mail {
+    max-width: 50px;
+  }
+
+  /*----desktop css-----*/
+  
+  
+  @media (min-width: 768px) {
+
+    /*----header-----*/
+
+    .header li {
+      float: left;
+    }
+    .header li a {
+      padding: 20px 30px;
+    }
+    .header .menu {
+      clear: none;
+      float: left;
+      max-height: none;
+      background-color: #e6dfd6;
+    }
+    .header .menu-icon {
+      display: none;
+    }
+
+    .menu li ul {
+        background-color: #e3dacd; 
+        width: 100%;
+        height: 110px;
+        text-align: center;
+      }
+
+    #menu_lime {
+        background-color: #cbf6e1;
+    }
+
+    #menu_grape {
+        background-color: #f4dfd1;
+    }
+
+    #menu_lakrids {
+        background-color: #939290;
+    }
+
+    .sog{
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+      }
+  
+      .sog img{
+        width: 60px;
+        height: auto;
+        padding-right: 20px;
+      }
+
+      /*-----forside-----*/
+
+      .forside_billede {
+        max-width: 100%;
+        height: auto;
+        display: block;
+      }
+
+      .overskrift_forside {
+        margin-bottom: 3%;
+        margin-top: 2%;
+        font-size: 200%;
+      }
+
+      .billeder_forside {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+        gap: 10px; 
+        justify-content: center; 
+        align-items: center; 
+      }
+      
+      .billeder_forside img {
+        max-width: 100%; 
+        height: auto; 
+      }
+
+      .tekst2_forside {
+        width: 10%;
+      }
+      
+
+      .tekst_forside,
+      .tekst2_forside {
+        display: flex;
+        padding: 20px;
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .forside_lakrids {
+        display: flex;
+        justify-content: center;
+        width: 60%;
+        margin: 0 auto;
+      }
+
+      /*----underside, fremstilling af øl------*/
+
+      .main2 {
+        padding-top: 5%;
+      }
+
+      .fremstilling_overskrift{
+        margin-bottom: 3%;
+        margin-top: 2%;
+        font-size: 200%;
+      }
+
+      .billede_raa {
+        max-width: 50%;
+        margin-left: 5%;
+      }
+
+      #fremstilling_tekst1 {
+        margin-left: 12%;
+        margin-top: 1%;
+        border: 2px solid #d7b39d;
+      }
+
+      #brygproces {
+        display: none;
+      }
+
+    
+      .bryg {
+        max-width: 50%;
+        margin-left: 50%;
+      }
+
+      .sundhed {
+        max-width: 50%;
+        margin-left: 5%;
+      }
+
+      #fremstilling_sundhed {
+        width: 70%;
+        margin-right: 10%;
+      }
+
+      #fremstilling_tekst2 {
+        margin-left: 58%;
+        border: 2px solid #d7b39d;
+      }
+      
+      
+      #sundhed_overskrift {
+       margin-top: 10%;
+      }
+
+      .tekst_fremstilling {
+        width: 35%;
+        line-height: 2.3;
+      }
+
+      .billedetekst1 {
+        display: flex;
+        flex-direction: column;
+       
+      }
+
+      .billedetekst2 {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 31.5%;
+      }
+
+      .billedetekst3 {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        padding: 5%;
+        border: 2px solid #d7b39d;
+        width: 70%;
+        margin: 0 auto;
+        padding-left: 5%;
+      }
+
+      .hr_frem {
+        margin-top: 10%;
+        width: 40%;
+      }
+
+      /*---underside, om bryggeriet----*/
+
+      .omos_tekst {
+        font-size: larger;
+        max-width: 40%;
+      }
+
+      .værdier {
+        max-width: 70%;
+      }
+
+      .koncert,
+      .venner {
+        max-width: 60%;
+      }
+
+      .omos_billedetekst1 {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        padding: 5%;
+        border: 2px solid #d7b39d;
+        width: 70%;
+        margin: 0 auto;
+        padding: 0%;
+        padding-left: 5%;
+      }
+
+      .omos_billedetekst2 {
+        display: flex;
+        justify-content: center;
+        flex-direction: row-reverse;
+        padding: 5%;
+        border: 2px solid #d7b39d;
+        width: 70%;
+        margin: 0 auto;
+        padding: 0%;
+        padding-left: 5%;
+        margin-top: 2%;
+      }
+
+      .omos_billedetekst3 {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        padding: 5%;
+        border: 2px solid #d7b39d;
+        width: 70%;
+        margin: 0 auto;
+        padding-left: 5%;
+      }
+
+      .underoverskrift {
+        text-align: center;
+      }
+
+      #omos {
+        margin-top: 4%;
+        margin-bottom: 2%;
+      }
+
+      #fællesskabet,
+      #tømmermændsfri {
+        margin-top: 5%;
+      }
+
+      .lime_omos img,
+      .grape_omos img,
+      .lakrids_omos img {
+        max-width: 35%;
+      }
+
+      .lime_omos {
+        top: 90%;
+      }
+
+      .grape_omos {
+        top: 175%;
+      }
+
+      .lakrids_omos {
+        top: 260%;
+      }
+
+
+      /*------underside, alkoholfri øl-----*/
+
+      .main4 {
+        padding-top: 0.5%;
+      }
+
+      .produkter img {
+       width: 60%;
+       margin-top: -5%;
+    }
+
+    #lime_alkohol {
+      max-width: 42%;
+      display: flex;
+      justify-content: center;
+      margin-top: 0%;
+      margin-bottom: 5%;
+    }
+
+    .overskrift_produkter {
+      margin-top: 8%;
+    }
+
+    /*------produkt undersider-----*/
+
+
+    .produkt_undersider img {
+        width: 60%;
+        margin-top: 5%;
+    }
+
+    #lime_alkohol2 {
+      max-width: 40%;
+      display: flex;
+      justify-content: center;
+      margin-top: 5%;
+    }
+
+    .produkter_tekst {
+        font-size: x-large;
+        max-width: 30%;
+        margin: auto;
+        text-align: center;
+        margin-top: 3%;
+    }
+
+    .info_produkter img {
+        width: 50%;
+        margin-top: -10%;
+    }    
+
+    #lakrids_alkohol,
+    #grape_alkohol {
+      margin-top: -5%;
+    }
+
+    #llakrids,
+    #xgrape {
+      margin-top: -2%;
+    }
+
+    .produkt_overskrifter {
+      margin-top: 5%;
+    }
+   
+}
